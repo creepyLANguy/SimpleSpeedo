@@ -29,5 +29,5 @@ def acUpdate(deltaT):
         global speed, appWindow
         ac.setBackgroundOpacity(appWindow,0)
         speed = ac.getCarState(0, acsys.CS.SpeedKMH)
-        ac.setText(label, "{}".format(speed))
-        ac.setText(shadow, "{}".format(speed))
+        ac.setText(label, "{}".format(int(speed)))
+        ac.setText(shadow, "{}".format(int(speed)))
